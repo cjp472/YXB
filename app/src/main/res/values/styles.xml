@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowSoftInputMode"> adjustPan|stateAlwaysHidden</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <!-- 选择对话框-->
+    <style name="selection_dialog_theme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode"> adjustPan|stateAlwaysHidden</item>
+    </style>
+    <!--选择对话框动画样式-->
+    <style name="selection_dialog_anim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/selection_dialog_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/selection_dialog_exit</item>
+        //退出时的动画
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/expand</item>
+        <item name="android:windowExitAnimation">@anim/collapse</item>
+    </style>
+</resources>

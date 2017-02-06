@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_class_layout"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    >
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        style="@style/TextStyle"
+        android:id="@+id/choose_class_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivider"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:src="@drawable/down"
+        />
+</LinearLayout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_title_permission1">
+        <item>首页</item>
+        <item>晨午检</item>
+        <item>考勤</item>
+        <item>幼儿档案</item>
+        <item>体质测评</item>
+    </string-array>
+    <string-array name="symptom_array">
+        <item>发热</item>
+        <item>咳嗽</item>
+        <item>出疹</item>
+        <item>腹泻</item>
+        <item>呕吐</item>
+        <item>黄疸</item>
+        <item>红眼</item>
+        <item>腮腺肿大</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="common_diseases">
+        <item>呼吸道疾病</item>
+        <item>皮肤疾病</item>
+        <item>肠道疾病</item>
+        <item>口腔疾病</item>
+        <item>传染类疾病</item>
+        <item>眼科疾病</item>
+        <item>外部损伤</item>
+        <item>其他疾病</item>
+    </string-array>
+    <string-array name="contagion">
+        <item>手足口病</item>
+        <item>水痘</item>
+        <item>流行性腮腺炎</item>
+        <item>猩红热</item>
+        <item>急性出血性结膜炎</item>
+        <item>痢疾</item>
+        <item>麻疹</item>
+        <item>风疹</item>
+        <item>传染性肝炎</item>
+        <item>病毒性肝炎（甲型）</item>
+        <item>病毒性肝炎（乙型）</item>
+        <item>脊髓灰质炎</item>
+        <item>细菌性痢疾</item>
+        <item>流行性感冒</item>
+        <item>流行性脑脊髓膜炎</item>
+        <item>幼儿急疹</item>
+        <item>百日咳</item>
+        <item>流行性乙型脑炎</item>
+        <item>传染性非典型肺炎</item>
+        <item>人禽流感</item>
+        <item>甲型H1N流感</item>
+        <item>其它</item>
+
+    </string-array>
+
+</resources>

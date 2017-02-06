@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="510dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/popup_top_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="传染病记录"
+        android:textColor="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bottom_bg"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="80dp"
+        android:paddingTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="正在记录:"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/record_title"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:text="王笑笑  大一班  女  3岁  7月13日请假"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="传染病名称:"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/sick"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/list_bg"
+                android:drawableRight="@drawable/down"
+                android:padding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="就医医院:"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontEditText
+                android:id="@+id/hospital"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/list_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="诊断日期:"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/diagnosis_time"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/list_bg"
+                android:drawableRight="@drawable/clar"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="是否已痊愈:"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+                    android:id="@+id/yes"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/radio_selector"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="是"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+                    android:id="@+id/no"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:background="@null"
+                    android:button="@drawable/radio_selector"
+                    android:padding="10dp"
+                    android:text="否"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="备注:"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontEditText
+                android:id="@+id/remark"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/list_bg"
+                android:gravity="left|top"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/save"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/cancel"
+                android:background="@drawable/bt_in_enable_bg"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@android:color/white"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/cancel"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bt_in_enable1_bg"
+                android:gravity="center"
+                android:text="取消"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

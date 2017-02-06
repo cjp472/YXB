@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorTitleBg"
+        android:paddingLeft="20dp"
+        >
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/defaultavatar"
+            android:visibility="gone"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="考勤"
+            android:textColor="@color/colorText"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <fragment
+                android:id="@+id/check_fragment"
+                android:name="com.cicada.yuanxiaobao.attendance.view.CheckFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <fragment
+                android:id="@+id/sick_traack_fragment"
+                android:name="com.cicada.yuanxiaobao.attendance.view.SickTrackFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <fragment
+                android:id="@+id/special_focus_fragment"
+                android:name="com.cicada.yuanxiaobao.attendance.view.SpecialFocusFragemnt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/check_tv"
+                style="@style/TextStyle"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bt_morn_noon_bg"
+                android:gravity="center"
+                android:paddingBottom="2.5dp"
+                android:text="考勤"
+                android:textColor="@color/colorBlue"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/sick_track_tv"
+                style="@style/TextStyle"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="2.5dp"
+                android:text="病假追踪"
+                />
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/special_focus_tv"
+                style="@style/TextStyle"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="2.5dp"
+                android:text="特别关注"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

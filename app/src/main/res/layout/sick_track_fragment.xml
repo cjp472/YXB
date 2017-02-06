@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/class_fragment"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:name="com.cicada.yuanxiaobao.attendance.view.TeacherClassFragment"
+            />
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/list_bg"
+            android:orientation="horizontal"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:src="@drawable/down"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/sick"
+        android:drawablePadding="5dp"
+        android:text="病假(0人)"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sick_top_bg"
+        android:divider="@drawable/middle_h_line"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        >
+
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02"
+            android:gravity="center"
+            android:text="姓名"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:text="性别"
+            android:textSize="12sp"
+            />
+
+       <!-- <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手机号码"
+            android:textSize="12sp"
+            />-->
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02"
+            android:gravity="center"
+            android:text="请假日期"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02"
+            android:gravity="center"
+            android:text="主要症状"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="就医医院"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02"
+            android:gravity="center"
+            android:text="诊断结果"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.03"
+            android:gravity="center"
+            android:text="住院/居家"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.03"
+            android:gravity="center"
+            android:text="目前状况"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="预计返园日期"
+            android:textSize="12sp"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02"
+            android:gravity="center"
+            android:text="备注"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cicada.yuanxiaobao.widget.MyLoadListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sick_list_bg"
+            android:divider="@color/colorDivider"
+            android:dividerHeight="1px"
+            android:listSelector="@android:color/transparent"
+            >
+        </com.cicada.yuanxiaobao.widget.MyLoadListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

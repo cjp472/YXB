@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <fragment
+            android:id="@+id/class_fragment"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:name="com.cicada.yuanxiaobao.attendance.view.TeacherClassFragment"
+            />
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/list_bg"
+            android:orientation="horizontal"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/clar"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/need_check_tv"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:text="待考勤: 0人"
+                />
+
+            <com.cicada.yuanxiaobao.common.widget.MyGridView
+                android:id="@+id/need_check_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grid_bg"
+                android:horizontalSpacing="1px"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="11"
+                android:padding="1px"
+                android:verticalSpacing="1px"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/attendance_tv"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/attendance"
+                android:drawablePadding="5dp"
+                android:gravity="bottom"
+                android:text="出勤: 0人"
+                />
+
+            <com.cicada.yuanxiaobao.common.widget.MyGridView
+                android:id="@+id/attendance_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grid_bg"
+                android:horizontalSpacing="1px"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="11"
+                android:padding="1px"
+                android:verticalSpacing="1px"
+                />
+
+            <LinearLayout
+                android:id="@+id/absenteeism_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/absenteeism_tv"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/absenteeism"
+                    android:drawablePadding="5dp"
+                    android:text="缺勤: 0人"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/casual_leave_tv"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/casual"
+                    android:drawablePadding="5dp"
+                    android:text="事假: 0人"
+
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/sick_leave_tv"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/sick"
+                    android:drawablePadding="5dp"
+                    android:text="病假: 0人"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/absenteeism_total_tv"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="缺勤合计 (0人)"
+                    />
+            </LinearLayout>
+
+
+            <com.cicada.yuanxiaobao.common.widget.MyGridView
+                android:id="@+id/absenteeism_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grid_bg"
+                android:horizontalSpacing="1px"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="11"
+                android:padding="1px"
+                android:verticalSpacing="1px"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/attendance"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bt_attendance_selector"
+                android:drawableLeft="@drawable/bt_attendance_left_selector"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="出勤"
+                android:textColor="@drawable/bt_textview_selector"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/absenteeism"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bt_absenteeism_selector"
+                android:drawableLeft="@drawable/absenteeism"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="缺勤"
+                android:textColor="@drawable/bt_textview_selector"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/casual_leave"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bt_casual_selector"
+                android:drawableLeft="@drawable/bt_casual_left_selector"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="事假"
+                android:textColor="@drawable/bt_textview_selector"
+
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/sick_leave"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bt_sick_selector"
+                android:drawableLeft="@drawable/sick"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="病假"
+                android:textColor="@drawable/bt_textview_selector"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/kid_details"
+                style="@style/TextStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bt_blue_bg1"
+                android:gravity="center"
+                android:text="详情"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            android:id="@+id/commit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bt_in_enable_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+</LinearLayout>

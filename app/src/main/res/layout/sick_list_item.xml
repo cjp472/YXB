@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:divider="@drawable/middle_h_line"
+              android:orientation="horizontal"
+              android:showDividers="middle"
+    >
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/childSex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.05"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <!--<com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="13567899876"
+        android:textSize="12sp"
+        />-->
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/leaveTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:maxEms="6"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/hospital"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/resultInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/treatmentResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.03"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.03"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+        android:id="@+id/attach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:maxEms="7"
+        android:ellipsize="end"
+        android:lines="1"
+        />
+</LinearLayout>

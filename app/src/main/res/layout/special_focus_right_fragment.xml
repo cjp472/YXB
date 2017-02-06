@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sick_top_bg"
+        android:divider="@drawable/middle_v_line"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+
+            <ImageView
+                android:id="@+id/tavatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/defaultavatar"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tavatar"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/name"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/women"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/age"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/name"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/group"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/name"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/archive"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/relative"
+                android:background="@drawable/bt_blue_bg0"
+                android:gravity="center"
+                android:text="档案"
+                android:textColor="@color/colorBlue"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/status"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@drawable/attendance"
+                android:drawablePadding="5dp"
+                android:text="出勤"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:background="@android:color/white"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                />
+
+            <ImageView
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/down"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/sick_top_bg"
+            android:divider="@drawable/middle_h_line"
+            android:orientation="horizontal"
+            android:paddingLeft="1px"
+            android:paddingRight="1px"
+            android:showDividers="middle"
+            >
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/morn_noon_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/foucs_tab_bg"
+                android:gravity="center"
+                android:text="晨午检结果"
+                android:textColor="@color/colorBlue"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/entrust"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="嘱托"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/special_situation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="特别情况"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/vaccine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="疫苗"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/physique"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="体格"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/corporeity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="体质"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                android:id="@+id/smart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="智能"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-1px"
+        android:background="@drawable/sick_list_bg"
+        >
+    </FrameLayout>
+</LinearLayout>

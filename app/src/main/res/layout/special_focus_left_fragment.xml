@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="带病入园"
+            />
+
+        <com.cicada.yuanxiaobao.common.widget.MyGridView
+            android:id="@+id/kid_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grid_bg"
+            android:horizontalSpacing="1px"
+            android:listSelector="@android:color/transparent"
+            android:padding="1px"
+            android:verticalSpacing="1px"
+            android:numColumns="4"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/green_dot"
+                android:drawablePadding="5dp"
+                android:textSize="12sp"
+                android:text="需要观察"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/yellow_dot"
+                android:drawablePadding="5dp"
+                android:textSize="12sp"
+                android:text="委托吃药"
+                />
+
+            <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/red_dot"
+                android:drawablePadding="5dp"
+                android:textSize="12sp"
+                android:text="传染病预警"
+                />
+        </LinearLayout>
+
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:numColumns="4"
+            android:text="家长嘱托"
+            android:visibility="gone"
+            />
+
+        <com.cicada.yuanxiaobao.common.widget.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grid_bg"
+            android:horizontalSpacing="1px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:padding="1px"
+            android:verticalSpacing="1px"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+</ScrollView>

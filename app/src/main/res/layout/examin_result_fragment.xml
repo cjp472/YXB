@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/class_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+                    android:id="@+id/morn"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/radio_selector"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="晨检"
+                    />
+
+                <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+                    android:id="@+id/noon"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:background="@null"
+                    android:button="@drawable/radio_selector"
+                    android:padding="10dp"
+                    android:text="午检"
+                    />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_bg"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    android:id="@+id/date"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorDivider"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/clar"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/class_fragment"
+            android:name="com.cicada.yuanxiaobao.examine.view.ClassFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <com.cicada.yuanxiaobao.common.font.MyFontTextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tishi"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:text="点击年级或者班级可以查看相应年级或者班级的检查结果哦~"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/enter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:text="带病入园"
+                    />
+
+                <com.cicada.yuanxiaobao.common.widget.MyGridView
+                    android:id="@+id/enter_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grid_bg"
+                    android:horizontalSpacing="1px"
+                    android:listSelector="@android:color/transparent"
+                    android:padding="1px"
+                    android:verticalSpacing="1px"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/green_dot"
+                        android:drawablePadding="10dp"
+                        android:text="需要观察"
+                        android:textSize="12sp"
+                        />
+
+                    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:drawableLeft="@drawable/yellow_dot"
+                        android:drawablePadding="10dp"
+                        android:text="委托吃药"
+                        android:textSize="12sp"
+                        />
+
+                    <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                        style="@style/TextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:drawableLeft="@drawable/red_dot"
+                        android:drawablePadding="10dp"
+                        android:text="传染病预警"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.cicada.yuanxiaobao.common.font.MyFontTextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="bottom"
+                    android:text="离园返家"
+                    />
+
+                <com.cicada.yuanxiaobao.common.widget.MyGridView
+                    android:id="@+id/out_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grid_bg"
+                    android:horizontalSpacing="1px"
+                    android:listSelector="@android:color/transparent"
+                    android:padding="1px"
+                    android:verticalSpacing="1px"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

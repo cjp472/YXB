@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+            android:id="@+id/morn"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/radio_selector"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="晨检"
+            />
+
+        <com.cicada.yuanxiaobao.common.font.MyFontRadioButton
+            android:id="@+id/noon"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:background="@null"
+            android:button="@drawable/radio_selector"
+            android:padding="10dp"
+            android:text="午检"
+            />
+    </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <fragment
+                android:id="@+id/class_fragment"
+                android:name="com.cicada.yuanxiaobao.examine.view.ClassFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <GridView
+                android:id="@+id/kid_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/grid_bg"
+                android:horizontalSpacing="1px"
+                android:listSelector="@android:color/transparent"
+                android:padding="1px"
+                android:verticalSpacing="1px"
+                />
+        </LinearLayout>
+</LinearLayout>
